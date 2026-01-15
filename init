@@ -45,4 +45,5 @@ read username
 git config --global user.email $email
 git config --global user.name $username
 
+chmod +x $PWD/qgit
 sudo mv $PWD/qgit /usr/bin/	
