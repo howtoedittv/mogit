@@ -14,13 +14,22 @@ git clone https://github.com/howtoedittv/qgit
 cd qgit
 ```
 
-### Initialize and Install:
+### Quick Install:
 ```sh
 chmod +x init
 ./init
-sudo mv qgit /usr/bin/
 ```
 
+### Manual Install:
+```sh
+chmod +x qgit
+sudo mv $PWD/qgit /usr/bin/
+with your package manager install git github-cli xdg-utils (note: on bsd based distros the github-cli package is useally named gh insted)
+in the terminal type gh and follow the insturctions there (log into your github acount on your default browser and input a given code)
+after that wait until your in your prompt once more and type in:
+git config --global user.email <your email>
+git config --global user.name <your username>
+```
 ## Usage
 
 Once installed, you can launch qgit from anywhere by running:
