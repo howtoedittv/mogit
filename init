@@ -1,0 +1,48 @@
+if command -v pacman &>/dev/null; then
+    echo "Detected Arch-based system."
+    sudo pacman -Sy --needed git github-cli xdg-utils
+
+elif command -v apt &>/dev/null; then
+    echo "Detected Debian/Ubuntu-based system."
+    sudo apt update
+    sudo apt install -y git github-cli xdg-utils
+
+elif command -v dnf &>/dev/null; then
+    echo "Detected Fedora-based system."
+    sudo dnf install -y git github-cli xdg-utils
+
+elif command -v zypper &>/dev/null; then
+    echo "Detected openSUSE-based system."
+    sudo zypper refresh
+    sudo zypper install -y git github-cli xdg-utils
+
+elif command -v xbps-install &>/dev/null; then
+    echo "Detected Void Linux."
+    sudo xbps-install -Sy git github-cli xdg-utils
+
+elif command -v emerge &>/dev/null; then
+    echo "Detected Gentoo."
+    sudo emerge -aq dev-vcs/git github-cli xdg-utils
+
+elif command -v pkg &>/dev/null; then
+    echo "Detected bsd based distro."
+    sudo pkg install git gh xdg-utils
+
+else
+    echo "Unsupported Linux distribution."
+    echo "Please install packages (git, github-cli and xdg-utils) manually."
+    exit 1
+fi
+
+gh auth login
+
+echo "enter email"
+read email
+
+echo "enter username"
+read username
+
+git config --global user.email $email
+git config --global user.name $username
+
+sudo mv $PWD/qgit /usr/bin/	
