@@ -10,7 +10,7 @@ Cross-Platform Git GUI Launcher
 
 ### Clone the repository:
 ```sh
-git clone https://github.com/howtoedittv/mogit
+git clone https://github.com/howtoedittv/mogit.git
 cd mogit
 ```
 
@@ -22,8 +22,8 @@ chmod +x init
 
 ### Manual Install:
 ```sh
-chmod +x qgit
-sudo mv $PWD/qgit /usr/bin/
+chmod +x mogit
+sudo mv $PWD/mogit /usr/bin/
 with your package manager install git github-cli xdg-utils (note: on bsd based distros the github-cli package is useally named gh insted)
 
 in the terminal type gh auth login and fallow the intructions on screen
