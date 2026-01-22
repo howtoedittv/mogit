@@ -1,8 +1,8 @@
-# qgit
+# mogit
 
 Cross-Platform Git GUI Launcher
 
-**qgit** is a simple Git GUI tool available for most Linux distributions and FreeBSD. It provides an easy way to visualize and interact with Git repositories, making it easy to quickly create a new Git repository.
+**mogit** is a simple Git GUI tool available for most Linux distributions and FreeBSD. It provides an easy way to visualize and interact with Git repositories, making it easy to quickly create a new Git repository.
 
 ---
 
@@ -10,8 +10,8 @@ Cross-Platform Git GUI Launcher
 
 ### Clone the repository:
 ```sh
-git clone https://github.com/howtoedittv/qgit
-cd qgit
+git clone https://github.com/howtoedittv/mogit
+cd mogit
 ```
 
 ### Quick Install:
@@ -36,7 +36,7 @@ git config --global user.name <your username>
 
 Once installed, you can launch qgit from anywhere by running:
 ```sh
-qgit
+mogit
 ```
 
 ## Features
@@ -48,7 +48,7 @@ qgit
 
 ## Purpose
 
-qgit exists to provide a lightweight and user-friendly interface for Git, making repository management accessible and efficient across multiple platforms.
+mogit exists to provide a lightweight and user-friendly interface for Git, making repository management accessible and efficient across multiple platforms.
 
 ## Contributing
 
