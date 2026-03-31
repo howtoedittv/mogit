@@ -19,7 +19,7 @@ cd mogit
 chmod +x init
 ./init
 ```
-### auth
+### github authentication
 ```sh
 mogit auth
 ```
