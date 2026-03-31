@@ -27,9 +27,9 @@ mogit auth
 ### Manual Install:
 ```sh
 chmod +x mogit
-sudo mv $PWD/mogit /usr/bin/
+sudo mv ./mogit /usr/bin/
 with your package manager install git github-cli xdg-utils (note: on bsd based distros the github-cli package is useally named gh insted)
-type in mogit auth and follow it
+type in mogit auth and follow the instructions
 
 ```
 ## Usage
